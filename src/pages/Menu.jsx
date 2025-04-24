@@ -4,20 +4,89 @@ import { useNavigate } from 'react-router-dom';
 import styles from './Menu.module.css'; // CSS for the dish grid
 
 const sampleMenu = [
-  { id: 1, category: 'Starters', name: 'Samosa', description: 'Crispy pastry with spiced potatoes.', price: 59 },
-  { id: 2, category: 'Starters', name: 'Onion Bhaji', description: 'Spiced onion fritters.', price: 49 },
+  { 
+	id: 1, 
+	category: 'Starters', 
+	name: 'Samosa', 
+	description: 'Crispy pastry with spiced potatoes.', 
+	price: 59,
+	image: '/images/samosa.png'
+  },
+  { 
+	id: 2, 
+	category: 'Starters', 
+	name: 'Onion Bhaji', 
+	description: 'Spiced onion fritters.', 
+	price: 49,
+	image: '/images/onion-bhaji.png'
+  },
 
-  { id: 3, category: 'Vegetarian', name: 'Palak Paneer', description: 'Spinach curry with paneer.', price: 129 },
-  { id: 4, category: 'Vegetarian', name: 'Chana Masala', description: 'Chickpea curry.', price: 119 },
+  { 
+	id: 3, 
+	category: 'Vegetarian', 
+	name: 'Palak Paneer', 
+	description: 'Spinach curry with paneer.', 
+	price: 129, 
+	image: '/images/palak-paneer.jpg'
+  },
+  { 
+	id: 4, 
+	category: 'Vegetarian', 
+	name: 'Chana Masala', 
+	description: 'Chickpea curry.', 
+	price: 119,
+	image: '/images/chana-masala.jpg'
+  },
+  { 
+    id: 5, 
+    category: 'Meat', 
+    name: 'Butter Chicken', 
+    description: 'Mild tomato curry with chicken.', 
+    price: 149,
+	image: '/images/butter-chicken.jpg'
+  },
+  { 
+    id: 6, 
+	category: 'Meat', 
+	name: 'Lamb Vindaloo', 
+	description: 'Spicy Goan lamb curry.', 
+	price: 159,
+	image: '/images/spicy-foan-lamb-curry.jpg'
+  },
 
-  { id: 5, category: 'Meat', name: 'Butter Chicken', description: 'Mild tomato curry with chicken.', price: 149 },
-  { id: 6, category: 'Meat', name: 'Lamb Vindaloo', description: 'Spicy Goan lamb curry.', price: 159 },
+  { 
+	id: 7, 
+	category: 'Desserts', 
+	name: 'Gulab Jamun', 
+	description: 'Fried dough in rose syrup.', 
+	price: 49,
+	image: '/images/fried-dough.jpg'
+  },
+  { 
+	id: 8, 
+	category: 'Desserts', 
+	name: 'Ras Malai', 
+	description: 'Soft cheese dumplings in milk.', 
+	price: 59,
+	image: '/images/ras-malai.jpg'
+  },
 
-  { id: 7, category: 'Desserts', name: 'Gulab Jamun', description: 'Fried dough in rose syrup.', price: 49 },
-  { id: 8, category: 'Desserts', name: 'Ras Malai', description: 'Soft cheese dumplings in milk.', price: 59 },
-
-  { id: 9, category: 'Drinks', name: 'Mango Lassi', description: 'Sweet yogurt drink.', price: 39 },
-  { id: 10, category: 'Drinks', name: 'Masala Chai', description: 'Spiced Indian tea.', price: 29 },
+  { 
+	id: 9, 
+	category: 'Drinks', 
+	name: 'Mango Lassi', 
+	description: 'Sweet yogurt drink.', 
+	price: 39,
+	image: '/images/mango-lassi.jpg'
+  },
+  { 
+	id: 10, 
+	category: 'Drinks', 
+	name: 'Masala Chai', 
+	description: 'Spiced Indian tea.', 
+	price: 29,
+	image: '/images/spiced-indian-tea.jpg'
+  },
 ];
 
 const categories = ['Starters', 'Vegetarian', 'Meat', 'Desserts', 'Drinks'];

@@ -17,7 +17,7 @@ export default function FormField({ label, id, type = "text", value, onChange, r
         aria-describedby={error ? `${id}-error` : undefined}
       />
       {error && (
-        <div id={`${id}-error`} className={styles.error}>
+        <div id={`${id}-error`} className={styles.error} role="alert">
           {error}
         </div>
       )}

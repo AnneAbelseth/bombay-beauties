@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Layout.module.css';
-import logo from '../assets/logo.png'; // import the logo
+import logo from '../assets/logo.png';
 
 const steps = [
   { path: '/', label: 'Menu' },
@@ -15,14 +15,16 @@ export default function Layout({ children }) {
   return (
     <div className={styles.wrapper}>
       <header className={styles.header}>
-	    <img src={logo} alt="Bombay Beauties logo" className={styles.logo} />
-		<div>
-			<h1>Bombay Beauties</h1>
-			<p className={styles.tagline}>your favourite Indian restaurant</p>
-		</div>
+        <div aria-hidden="true" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <img src={logo} alt="Bombay Beauties logo" className={styles.logo} />
+          <div>
+            <h1>Bombay Beauties</h1>
+            <p className={styles.tagline}>your favourite Indian restaurant</p>
+          </div>
+        </div>
       </header>
 
-      <nav className={styles.nav}>
+      <nav className={styles.nav} aria-label="Main navigation">
         <ul>
           {steps.map(step => (
             <li key={step.path} className={location.pathname === step.path ? styles.active : ''}>

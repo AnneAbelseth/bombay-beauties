@@ -2,26 +2,30 @@
   margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
+  max-width: 500px;
 }
 
-input {
+.field label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.field input,
+.field textarea {
   padding: 0.75rem;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
   background-color: #fff;
-  transition: border-color 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-input:focus {
+.field input:focus,
+.field textarea:focus {
   border-color: #c0392b;
   outline: none;
   box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.2);
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 
 .required {
